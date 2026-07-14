@@ -4,7 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Sticky Navbar scroll effect
+    // Sticky Navbar scroll effect
     const nav = document.querySelector('.nav-menu');
     const handleScroll = () => {
         if (window.scrollY > 40) {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Initial check on load
 
-    // 2. Active section link highlighting in Navbar
+    // Active section link highlighting in Navbar
     const sections = document.querySelectorAll('section[id], header[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleActiveLink, { passive: true });
     handleActiveLink(); // Run once to initialize
 
-    // 3. Intersection Observer for Entrance/Reveal Animations
+    // Intersection Observer for Entrance/Reveal Animations
     const revealElements = document.querySelectorAll('.reveal');
     const revealObserverOptions = {
         threshold: 0.05, // Trigger as soon as 5% of the element is visible
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // 4. Parallax effect in Hero (Subtle translation on scroll)
+    // Parallax effect in Hero (Subtle translation on scroll)
     const profileImg = document.querySelector('.profile-photo');
     const heroInfo = document.querySelector('.intro');
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: true });
     }
 
-    // 5. Media Lightbox / Modal (Maximize videos & images)
+    // Media Lightbox / Modal (Maximize videos & images)
     const modal = document.getElementById('mediaModal');
     const modalContent = modal.querySelector('.modal-content');
     const modalClose = modal.querySelector('.modal-close');
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Theme Toggle (Light / Dark Mode)
+    // Theme Toggle (Light / Dark Mode)
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('i');
     
