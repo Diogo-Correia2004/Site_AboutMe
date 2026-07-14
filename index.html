@@ -3,149 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diogo Correia | Dev Space</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Diogo Correia, Informatics and Multimedia Engineering student, software developer, and game programmer.">
+    <title>Diogo Correia | Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    
     <link rel="stylesheet" href="estilo_index.css">
+    
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
 </head>
 <body>
 
-<header class="chill-header">
-    <nav class="nav-menu">
+    
+    <div class="glow-bg">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="nav-menu">
         <div class="nav-container">
-            <div class="nav-logo">Diogo Correia</div> <div class="nav-links">
+            <a href="#about" class="nav-logo" id="navLogo">Diogo Correia</a>
+            <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
-            </div>
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
         </div>
-    </nav>
-    <section id="about" div class="header-container">
-        
-        <div class="intro">
-            <span class="greeting">Hey, I'm</span>
-            <h1>Diogo Correia</h1>
-            <p>I’m a Informatics and Multimedia Engineering student at ISEL with a passion for building software and developing games. My main focus is programming, but I also love creating 2D visuals. I’m a hardworking developer, always curious to learn and build cool things</p>
-            <div class="header-cta">
-                <a href="CV_DiogoCorreia.pdf" target="_blank" class="cv-btn">View my CV</a>
-                
-                <div class="socials">
-                    <a href="https://linkedin.com/in/diogo-correia-8a99a0380" target="_blank" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Diogo-Correia2004" target="_blank" title="GitHub">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
+    </header>
 
-                    <a href="https://diogo-comsono.itch.io/" target="_blank" title="Itch.io">
-                        <i class="fa-brands fa-itch-io"></i>
-                    </a>
+   
+    <main>
+        
+       
+        <section id="about" class="hero-section">
+            <div class="hero-container">
+                <div class="intro reveal">
+                    <span class="greeting-badge">Hey, I'm</span>
+                    <h1>Diogo Correia</h1>
+                    <p class="hero-description">
+                        I’m an <strong>Informatics and Multimedia Engineering</strong> student at <strong>ISEL</strong> with a passion for building software and developing games. My main focus is programming, but I also love creating 2D visuals. I’m a hardworking developer, always curious to learn and build cool things.
+                    </p>
+                    <div class="header-cta">
+                        <a href="CV_DiogoCorreia.pdf" target="_blank" class="cv-btn" id="btnCV">
+                            <span>View my CV</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <div class="socials">
+                            <a href="https://linkedin.com/in/diogo-correia-8a99a0380" target="_blank" title="LinkedIn" class="social-icon" id="linkLinkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Diogo-Correia2004" target="_blank" title="GitHub" class="social-icon" id="linkGithub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://diogo-comsono.itch.io/" target="_blank" title="Itch.io" class="social-icon" id="linkItch">
+                                <i class="fa-brands fa-itch-io"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-photo reveal">
+                    <div class="profile-photo-inner">
+                        <img src="fotoPerfil.jpeg" alt="Diogo Correia - Profile Photo">
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
         
-        <div class="profile-photo">
-            <img src="fotoPerfil.jpeg" alt="Diogo Correia">
-        </div>
-    </div>
-</header>
-
-    <main>
-        <hr class="divider">
-        <section id="projects" class="content-section">
-            <h2 class="main-section-title">Projects</h2>
-            <h3 class="minimal-title">Some projects i've developed or helped developing</h3>            
+        <section id="projects" class="projects-section">
+            <div class="section-header reveal">
+                <span class="section-tagline">Portfolio Showcase</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some projects I've developed or helped developing.</p>
+            </div>
+            
             <div class="projects-list">
-                <article class="project-row">
+                
+                <!-- Project 1: Digger The Crow -->
+                <article class="project-row reveal" id="projectDigger">
                     <div class="project-media">
-                        <img src="DiggerTheCrow.jpg" >
+                        <div class="media-container">
+                            <img src="DiggerTheCrow.jpg" alt="Digger The Crow Gameplay Snapshot">
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Digger The Crow</h3>
+                        <div class="project-header">
+                            <span class="project-tag">Mobile Game &bull; Solo Project</span>
+                            <h3>Digger The Crow</h3>
+                        </div>
                         <p>
                             Developed as a <strong>solo university project</strong> at <strong>ISEL</strong>, I was responsible for every aspect of this <strong>mobile game</strong>, from <strong>gameplay programming</strong> to all <strong>2D art and animations</strong>. 
                         </p>
                         <p>
                             In <strong>Digger the Crow</strong>, you are not the hero, but an ancient Crow tasked with purifying the fallen and vengeful spirits left behind by "heroes".
-
                         </p>
-                        <a href="#" class="project-btn">Visit Game Page</a>
+                        <div class="project-tech">
+                            <span class="tech-pill">Unity</span>
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">2D Art</span>
+                            <span class="tech-pill">Aseprite</span>
+                            <span class="tech-pill">Mobile</span>
+                        </div>
+                        <div class="project-action-link">
+                            <a href="https://diogo-comsono.itch.io/digger-th" target="_blank" class="project-btn" id="btnDigger">
+                                <span>Visit Game Page</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="project-row reverse">
+                <!-- Project 2: The Experiment -->
+                <article class="project-row reverse reveal" id="projectExperiment">
                     <div class="project-media">
-                        <video autoplay muted loop playsinline class="project-video">
-                            <source src="theExperiment.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="media-container">
+                            <video autoplay muted loop playsinline class="project-video">
+                                <source src="theExperiment.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>The Experiment</h3>
+                        <div class="project-header">
+                            <span class="project-tag">2D Shooter &bull; Solo Project</span>
+                            <h3>The Experiment</h3>
+                        </div>
                         <p>Developed in just <strong>two weeks</strong> as a solo project, I was responsible for every aspect of this game, from <strong>gameplay programming</strong> to all <strong>2D art, animations, and background music</strong>.</p>
                         <p>In this side-view shooter, you play as Experiment #08, a test subject fighting through a high-security lab to escape his captors.</p>
-                        <a href="https://diogo-comsono.itch.io/the-experiment" class="project-btn">Visit Game Page</a> 
+                        <div class="project-tech">
+                            <span class="tech-pill">Unity</span>
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">2D Art</span>
+                            <span class="tech-pill">Aseprite</span>
+                        </div>
+                        <div class="project-action-link">
+                            <a href="https://diogo-comsono.itch.io/the-experiment" target="_blank" class="project-btn" id="btnExperiment">
+                                <span>Visit Game Page</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a> 
+                        </div>
                     </div>
                 </article>
  
-                <article class="project-row">
+                <!-- Project 3: Nature Strikes Back -->
+                <article class="project-row reveal" id="projectNature">
                     <div class="project-media">
-                        <img src="natureStikesBack.jpg" >
+                        <div class="media-container">
+                            <img src="natureStikesBack.jpg" alt="Nature Strikes Back Gameplay Screenshot">
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Nature Stikes Back</h3>
-                        <p>A 3D project born in a Game Jam of the club <strong>Isel Games Studios</strong> and later expanded for a <strong>at Lisboa Games Week.</strong> I helped programming some features</p>
-                        <p>The player play as a man trying to survive in this new world where plants rule</p>
-                        <a href="https://masterkun.itch.io/nature-strikes-back" class="project-btn">Visit Game Page</a>
+                        <div class="project-header">
+                            <span class="project-tag">3D Survival &bull; Game Jam Project</span>
+                            <h3>Nature Strikes Back</h3>
+                        </div>
+                        <p>A 3D project born in a Game Jam of the club <strong>Isel Games Studios</strong> and later expanded for presentation at <strong>Lisboa Games Week</strong>. I helped programming some features.</p>
+                        <p>The player plays as a man trying to survive in this new world where plants rule.</p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Unity</span>
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">3D</span>
+                            <span class="tech-pill">Blender</span>
+                            <span class="tech-pill">Game Jam</span>
+                        </div>
+                        <div class="project-action-link">
+                            <a href="https://masterkun.itch.io/nature-strikes-back" target="_blank" class="project-btn" id="btnNature">
+                                <span>Visit Game Page</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="project-row reverse">
+                <!-- Project 4: Ippo Fighting Game -->
+                <article class="project-row reverse reveal" id="projectIppo">
                     <div class="project-media">
-                        <video autoplay muted loop playsinline class="project-video">
-                            <source src="IppoGameplay.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="media-container">
+                            <video autoplay muted loop playsinline class="project-video">
+                                <source src="IppoGameplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Ippo Figthing Game - Image Processing Project</h3>
+                        <div class="project-header">
+                            <span class="project-tag">Computer Vision &bull; University Project</span>
+                            <h3>Ippo Fighting Game</h3>
+                        </div>
                         <p>
                             Developed as a <strong>duo university project</strong> at <strong>ISEL</strong>, the goal was to create an interactive experience using <strong>Computer Vision</strong>. 
                             By implementing <strong>image processing</strong> techniques like <strong>binarization and adaptive thresholding</strong>, we developed a system that translates real-time hand gestures and movement, into game commands.
                         </p>
                         <p>
                            <strong>Tools like Unity and Jupyter Notebook were essential in making this project's real-time processing possible.</strong>
-
                         </p>
                         <p>
                             Step into the shoes of <strong>Ippo</strong>, using your own movements to control the boxer’s strikes and defeat the opponent in this immersive technical challenge.
                         </p>
                         <p>For a detailed breakdown of the development process and algorithms used, visit the page.</p>
-                        <a href="#" class="project-btn">Visit Game Page</a> 
+                        <div class="project-tech">
+                            <span class="tech-pill">Unity</span>
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">OpenCV</span>
+                            <span class="tech-pill">Jupyter Notebook</span>
+                            <span class="tech-pill">Computer Vision</span>
+                        </div>
+                        <div class="project-action-link">
+                            <a href="#" class="project-btn" id="btnIppo">
+                                <span>Visit Game Page</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a> 
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
-        <hr class="divider">
-        <section id="education" class="content-section">
-            <h2 class="main-section-title">Education</h2>
-            <div class="edu-card">
-                <div class="edu-main">
-                    <h3>Undergraduate Informatics and Multimedia Engineering Student - 3º Year</h3>
-                    <span class="year">2023 — Present</span>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="section-header reveal">
+                <span class="section-tagline">Academic Studies</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            
+            <div class="education-timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Undergraduate Informatics and Multimedia Engineering</h3>
+                            <span class="timeline-date">2023 — Present</span>
+                        </div>
+                        <span class="timeline-sub">ISEL &bull; 3º Year Student</span>
+                        <p>
+                            Focusing primarily on <strong>Web Apps</strong>, <strong>Artificial Intelligence (AI)</strong>, and <strong>Databases</strong>. 
+                            Active enthusiast exploring interactive hardware and 3D scenes through <strong>Arduino</strong>, <strong>Blender</strong>, and <strong>Unity</strong>.
+                        </p>
+                    </div>
                 </div>
-                <p>3rd-year student at <strong>ISEL</strong>, focusing on <strong>Web Apps</strong>, <strong>AI</strong>, and <strong>Databases</strong>. 
-                I also explore hardware and 3D through <strong>Arduino</strong>, <strong>Blender</strong>, and <strong>Unity</strong>.</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Diogo Correia // 2026</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <span class="footer-logo">Diogo Correia</span>
+                <p>Developing robust games, graphics, and interactive software.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/diogo-correia-8a99a0380" target="_blank" title="LinkedIn" id="footerLinkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Diogo-Correia2004" target="_blank" title="GitHub" id="footerGithub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://diogo-comsono.itch.io/" target="_blank" title="Itch.io" id="footerItch">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Diogo Correia. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Media Lightbox Modal -->
+    <div id="mediaModal" class="media-modal" aria-hidden="true">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-content">
+            <!-- Populated dynamically via JS -->
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script src="script.js"></script>
 </body>
 </html>
